@@ -16,5 +16,11 @@ namespace Geekstagram
 
             Label1.Text = " " + user;
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Session["user"] = user;
+            Response.Redirect("FeedPerfil.aspx");
+        }
     }
 }
