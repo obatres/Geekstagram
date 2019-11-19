@@ -148,6 +148,7 @@
     <Content Include="SubirFoto.aspx" />
     <Content Include="CrearPublicacion.aspx" />
     <Content Include="FeedGeneral.aspx" />
+    <Content Include="FeedPerfil.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -267,6 +268,13 @@
     </Compile>
     <Compile Include="FeedGeneral.aspx.designer.cs">
       <DependentUpon>FeedGeneral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeedPerfil.aspx.cs">
+      <DependentUpon>FeedPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeedPerfil.aspx.designer.cs">
+      <DependentUpon>FeedPerfil.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
