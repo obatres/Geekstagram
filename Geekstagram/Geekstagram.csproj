@@ -145,6 +145,7 @@
     </Content>
     <Content Include="RegistroUsuario.aspx" />
     <Content Include="LogIn.aspx" />
+    <Content Include="SubirFoto.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -243,6 +244,13 @@
     </Compile>
     <Compile Include="LogIn.aspx.designer.cs">
       <DependentUpon>LogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SubirFoto.aspx.cs">
+      <DependentUpon>SubirFoto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SubirFoto.aspx.designer.cs">
+      <DependentUpon>SubirFoto.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

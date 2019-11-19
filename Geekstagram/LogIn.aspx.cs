@@ -28,9 +28,16 @@ namespace Geekstagram
             String pass = cmdP.ExecuteScalar().ToString();
             if (TextBox1.Text==user && TextBox2.Text==pass)
             {
-                Response.Redirect("RegistroUsuario.aspx");
+
+                Session["user"] = TextBox1.Text;
+                Response.Redirect("SubirFoto.aspx");
             }
             //Label3.Text = user+pass;
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("RegistroUsuario.aspx");
         }
     }
 }

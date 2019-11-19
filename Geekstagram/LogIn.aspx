@@ -14,8 +14,10 @@
         </div>
 
         <asp:TextBox ID="TextBox2" runat="server" Type="password"></asp:TextBox>
-    </p>
+    &nbsp;</p>
     <div>
         <asp:Button ID="Button1" runat="server" Text="Ingresar" OnClick="Button1_Click" />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Registrarme" />
     </div>
     </asp:Content>
