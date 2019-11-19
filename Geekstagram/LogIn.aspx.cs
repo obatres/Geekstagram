@@ -30,7 +30,7 @@ namespace Geekstagram
             {
 
                 Session["user"] = TextBox1.Text;
-                Response.Redirect("SubirFoto.aspx");
+                Response.Redirect("FeedGeneral.aspx");
             }
             //Label3.Text = user+pass;
         }
