@@ -24,7 +24,9 @@ namespace Geekstagram
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["GEEK"].ToString());
             con.Open();
             String consulta = "insert into publicacion values (GETDATE(),0,'"+TextBox1.Text+"','"+TextBox2.Text+"',"+DropDownList1.SelectedValue+",(Select idUsuario from usuario where username='"+user+"'));";
+            String actividad = "insert into actividad values(GETDATE(),'"+user+" creo una publicacion',(Select idUsuario from usuario where username='"+user+"'),(select top 1 idpublicacion from publicacion order by idpublicacion desc),(Select idUsuario from usuario where username='"+user+"'));";
             SqlCommand cmd = new SqlCommand(consulta, con);
+            SqlCommand ac = new SqlCommand(actividad, con);
             cmd.ExecuteNonQuery();
             con.Close();
             Session["user"] = user;
