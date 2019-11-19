@@ -34,5 +34,11 @@ namespace Geekstagram
             Session["user"] = "" ;
             Response.Redirect("LogIn.aspx");
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Session["user"] = user;
+            Response.Redirect("BuscarH.aspx");
+        }
     }
 }

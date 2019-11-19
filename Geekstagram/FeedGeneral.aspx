@@ -18,7 +18,7 @@
         <asp:SqlDataSource ID="FeedGeneral" runat="server" ConnectionString="<%$ ConnectionStrings:GEEK %>" SelectCommand="Select foto,Likes, Hashtag from publicacion, foto where idfoto=Foto_idfoto ;"></asp:SqlDataSource>
         <br />
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Crear Publicacion" />
-&nbsp;  <asp:Button ID="Button2" runat="server" Text="Buscar Hashtag" />
+&nbsp;  <asp:Button ID="Button2" runat="server" Text="Buscar Hashtag" OnClick="Button2_Click" />
         &nbsp;
         <asp:Button ID="Button3" runat="server" Text="Ver Actividad" />
         &nbsp;&nbsp;&nbsp;

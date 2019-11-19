@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Geekstagram
 {
-    public partial class WebForm7 : System.Web.UI.Page
+    public partial class WebForm8 : System.Web.UI.Page
     {
         string user;
         protected void Page_Load(object sender, EventArgs e)

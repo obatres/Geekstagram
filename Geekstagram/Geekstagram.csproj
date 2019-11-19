@@ -150,6 +150,7 @@
     <Content Include="FeedGeneral.aspx" />
     <Content Include="FeedPerfil.aspx" />
     <Content Include="VerActividad.aspx" />
+    <Content Include="BuscarH.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -283,6 +284,13 @@
     </Compile>
     <Compile Include="VerActividad.aspx.designer.cs">
       <DependentUpon>VerActividad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarH.aspx.cs">
+      <DependentUpon>BuscarH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuscarH.aspx.designer.cs">
+      <DependentUpon>BuscarH.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
