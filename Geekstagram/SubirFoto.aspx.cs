@@ -30,7 +30,7 @@ namespace Geekstagram
             cmd.ExecuteNonQuery();
             con.Close();
             Session["user"] = user;
-            Response.Redirect("RegistroUsuario.aspx");
+            Response.Redirect("CrearPublicacion.aspx");
             
         }
     }
