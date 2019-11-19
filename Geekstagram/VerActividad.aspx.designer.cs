@@ -10,16 +10,7 @@
 namespace Geekstagram {
     
     
-    public partial class WebForm6 {
-        
-        /// <summary>
-        /// Label1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+    public partial class WebForm7 {
         
         /// <summary>
         /// GridView1 control.
@@ -31,13 +22,13 @@ namespace Geekstagram {
         protected global::System.Web.UI.WebControls.GridView GridView1;
         
         /// <summary>
-        /// FeedPerfil control.
+        /// Actividad control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource FeedPerfil;
+        protected global::System.Web.UI.WebControls.SqlDataSource Actividad;
         
         /// <summary>
         /// Button1 control.

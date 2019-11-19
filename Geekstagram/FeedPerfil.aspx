@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FeedPerfil.aspx.cs" Inherits="Geekstagram.WebForm6" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <h1> Feed de <asp:Label ID="Label1" runat="server" Text=""></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="FeedGeneral.aspx">< Regresar </a></h1> 
+    <h1> Feed de <asp:Label ID="Label1" runat="server" Text=""></asp:Label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h1> 
     <div>
         <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="FeedPerfil">
             <Columns>
@@ -10,5 +10,7 @@
             </Columns>
         </asp:GridView>
         <asp:SqlDataSource ID="FeedPerfil" runat="server" ConnectionString="<%$ ConnectionStrings:GEEK %>" SelectCommand="Select foto,Likes, Hashtag  from publicacion, foto, usuario where idfoto=Foto_idfoto and idusuario=usuario_idusuario and username='obatres' order by fecha desc;"></asp:SqlDataSource>
+        <br />
+        <asp:Button ID="Button1" runat="server" Height="41px" Text="Regresar al feed" Width="156px" OnClick="Button1_Click" />
     </div>
 </asp:Content>
