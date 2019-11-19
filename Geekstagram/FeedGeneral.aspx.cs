@@ -22,5 +22,11 @@ namespace Geekstagram
             Session["user"] = user;
             Response.Redirect("SubirFoto.aspx");
         }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Session["user"] = user;
+            Response.Redirect("FeedPerfil.aspx");
+        }
     }
 }
